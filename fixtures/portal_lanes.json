@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-06-06T17:10:00Z",
+  "estate": "Patient portal appointment, consent, accessibility, message, and mobile-release lanes",
+  "lanes": [
+    {
+      "lane_id": "mobile-appointment-reschedule",
+      "surface": "Mobile appointment reschedule",
+      "release_blockers": 6,
+      "accessibility_failures": 11,
+      "consent_copy_gaps": 4,
+      "message_delivery_fail_percent": 8.5,
+      "crash_free_percent": 94.1,
+      "owner": "Patient access product",
+      "next_action": "Hold mobile release until reschedule consent copy and accessibility regressions are cleared."
+    },
+    {
+      "lane_id": "lab-result-notification",
+      "surface": "Lab result notification",
+      "release_blockers": 3,
+      "accessibility_failures": 5,
+      "consent_copy_gaps": 2,
+      "message_delivery_fail_percent": 6.2,
+      "crash_free_percent": 97.0,
+      "owner": "Clinical communications",
+      "next_action": "Attach delivery-failure evidence and consent copy review before next notification rollout."
+    },
+    {
+      "lane_id": "secure-message-reply",
+      "surface": "Secure message reply",
+      "release_blockers": 1,
+      "accessibility_failures": 2,
+      "consent_copy_gaps": 0,
+      "message_delivery_fail_percent": 2.1,
+      "crash_free_percent": 99.1,
+      "owner": "Care team workflow",
+      "next_action": "Keep secure-message reply posture in weekly portal QA."
+    }
+  ]
+}
+

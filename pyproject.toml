@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kotlin-patient-portal-readiness-ledger"
+version = "0.1.0"
+description = "Kotlin patient portal readiness ledger for mobile release risk, consent checks, accessibility, and appointment-flow reliability."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "AGPL-3.0-only"
+authors = [{ name = "Kinetic Gain" }]
+keywords = ["kotlin", "healthtech", "patient portal", "accessibility", "consent", "release readiness"]
+
+[project.scripts]
+kotlin-patient-portal-readiness-ledger = "kotlin_patient_portal_readiness_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kotlin_patient_portal_readiness_ledger*"]
+
