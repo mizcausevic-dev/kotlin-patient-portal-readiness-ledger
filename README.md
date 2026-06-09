@@ -6,11 +6,20 @@
 
 Kotlin Patient Portal Readiness Ledger turns mobile release blockers, accessibility failures, consent copy gaps, message delivery failures, and crash-free posture into one board-readable release proof.
 
+## What this product does
+
+This repo packages patient portal release risk for executives, product leaders, patient-access teams, and technical reviewers. It answers whether a mobile portal lane is safe enough to launch, where patient trust or access may break, and which owner needs to clear the next release blocker before the update becomes patient-visible.
+
+From a SaaS go-to-market and product marketing lens, the page turns Kotlin/mobile portal work into a clear buyer story: appointment flow, consent language, accessibility, message delivery, and crash-free posture are not separate technical chores. They are the operating proof behind patient retention, care access, support load, and trust.
+
+From a technical lens, the repo keeps the claim inspectable. It includes a Kotlin contract, Python scoring logic, SQL review queries, fixtures, unit tests, smoke checks, generated screenshots, and a static public proof surface. No PHI or production portal data is included.
+
 ## Why this exists
 
 - Patient portal risk gets expensive when release blockers, accessibility, consent language, and messaging reliability are reviewed separately.
 - Kotlin is a direct signal for mobile and Android patient portal work.
 - This repo gives practical HealthTech / patient access / Kotlin proof without exposing PHI or production portal data.
+- The common pattern across these Kinetic Gain repos is to model an operational lane, score the exposed risk, identify the owner, state the next action, and publish readable proof for both non-technical leaders and technical reviewers.
 
 ## Screenshots
 
@@ -33,4 +42,3 @@ python scripts/smoke_check.py
 ## Board question answered
 
 > Which patient portal release lanes threaten access, consent, accessibility, and trust before the next mobile launch?
-
